@@ -4,4 +4,5 @@ descripcion del producto: se vendera una serie de comida rapidas, tales como : m
 descripción del público: el publico al que apunta es a aquellas personas que deseen comer de forma rapida y sencilla. Enviando el producto a la ubicacion solicitadada
 descripción de los integrantes del grupo : 
                          -Castro Cristian: Estudiante de 25 años de San Salvador de Jujuy estudio Profesorado de Matematica Secundaria en IES Nº5.Me interesa la programacion como salida laboral y me gusta el curso y la modalidad de enseñanza de DIGITAL HOUSE.
-                         -Pablo Martinez: tengo 20 años y aunque entre  mis talentos no este la programacion, me esfuerzo constantamente en no quedarme atras en el curso y poder aprender algo que sincermente me interesa
+                         -Pablo Martinez: tengo 20 años y aunque entre  mis talentos no este la programacion, me esfuerzo constantamente en no quedarme atras en el curso y poder aprender algo que sincermente me interesa.
+                         -Cussi Marcos: Estudiante de 24 años perteneciente a la carrera de Profesorado de Historia del IES N° 5. Aprendiz en la programacion y con muchas ganas de seguir aprendiendo.
