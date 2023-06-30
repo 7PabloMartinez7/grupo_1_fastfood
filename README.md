@@ -8,7 +8,7 @@ descripción de los integrantes del grupo :
                          -Pablo Martinez: tengo 20 años y aunque entre  mis talentos no este la programacion, me esfuerzo constantamente en no quedarme atras en el curso y poder aprender algo que sincermente me interesa.
                          -Cussi Marcos: Estudiante de 24 años perteneciente a la carrera de Profesorado de Historia del IES N° 5. Aprendiz en la programacion y con muchas ganas de seguir aprendiendo.
                          -Gonzalo Taritolay:
-                         -Angeles Flores:
+                         -Angeles Flores: Tengo 25 años. Soy de Palpala - Jujuy pero estudio en perico IES 6 el profesorado de Inglés. La verdad es todo nuevo esto de aprender programacion ya que no soy muy familiar de lo que refiere la tecnologia pero me lo propuse y estoy para aprender y cumplir cada reto propuesto.
                          -Jorgelina Vasquez:
 **Listado de al menos 5 referentes.**
 1) https://www.tiendadealimentos.com.ar/ Hemos escogido esta pagina como referencia porque es una pagina bastante sencilla de navegar por lo que el cliente en pocos pasos puede visalizar el producto y añadirlo a al carrito virtual de compras.
