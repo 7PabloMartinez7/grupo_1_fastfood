@@ -13,4 +13,5 @@ descripción de los integrantes del grupo :
 **Listado de al menos 5 referentes.**
 1) https://www.tiendadealimentos.com.ar/ Hemos escogido esta pagina como referencia porque es una pagina bastante sencilla de navegar por lo que el cliente en pocos pasos puede visalizar el producto y añadirlo a al carrito virtual de compras.
 2) https://www.comidasone.com/ Lo que me gusto de esta pagina fue que en la seccion del cuerpo de la misma tiene un apartado de instrucciones para decir en tres simples pasos. Ademas me guso y me llamo la atencion la seccion del apartado de creacion de cuenta para comprar mas rapido y llevar el control del pedido.
-3) 
+3) https://es.squarespace.com Lo que nos llamo la atencion de esta pagina es lo estetico como a medida que navegamos en el comienzo comienzan aparecer mas cosas
+4) 
