@@ -1,0 +1,1 @@
+Conclusion del primer sprint
