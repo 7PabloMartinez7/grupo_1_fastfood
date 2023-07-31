@@ -1,0 +1,108 @@
+body{
+    background-image: url('../img/fondo1.jpg');
+    background-size: cover;
+}
+section h1,h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+}
+section h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+section h3{
+    margin-top: 0px;
+    font-size:30px ;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-family: sans-serif ;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+#barra{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+#barra li a{
+    padding: 3px 6px;
+    margin-left: 50px;
+    margin-right: 30px;
+    background-color: #c71755;
+    box-shadow: 1px 1px 0px;
+    transition: all 450ms;
+}
+#barra li a:hover{
+    padding: 10px;
+    color: rgb(231, 229, 229);
+    background-color:rgb(71, 16, 43) ;
+    border-radius: 50%;
+}
+#login li a:hover{
+    padding: 10px;
+    color: rgb(231, 229, 229);
+    background-color:rgb(40, 16, 71) ;
+    border-radius: 50%;
+}
+#login{
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0px;
+}
+#login li a{
+    padding: 3px 6px;
+    margin-left: 20px;
+    background-color: #c71755;
+    box-shadow: 1px 1px 0px;
+    transition: all 450ms;
+}
+#login hr{
+   color: aqua;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+#main a{
+    margin-left: 35px;
+    color: aliceblue;
+    font-size: 30px;
+    transition: color 450ms;
+    
+}
+#main a:hover{
+    color: rgb(169, 170, 172);    
+}
+/*#main a i{
+    box-shadow: 0 0 10px yellow;
+}*/
+footer{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.397) ;
+    
+}
+#encabezadoFooter{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: sans-serif ;
+    color: rgb(255, 255, 255);
+}
