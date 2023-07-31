@@ -13,3 +13,6 @@ app.listen(5000,() => {
  app.get("/",(req, res)=>{
     res.sendFile(path.resolve(__dirname,"./views/productCart.html"));
 })
+app.get("/home",(req,res)=>{
+    res.sendFile(path.join(__dirname,"src/views/home.html"))
+ })
