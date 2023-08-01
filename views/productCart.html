@@ -3,110 +3,37 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Boostrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <!-- iconos -->
-        <script src="https://kit.fontawesome.com/7d6ac21798.js" crossorigin="anonymous"></script>
-        <!-- icono en la pestaña -->
-        <link rel="shortcut icon" href="/images/logo1_10_21421crop.png" type="image/x-icon">
-        <!-- icono footer -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-        <!-- css -->
-        <link rel="stylesheet" href="/stylesheets/productCart.css">
-        <title>Food4me</title>
+        <script src="https://kit.fontawesome.com/eea4f475c8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/productCart.css">
+        <title>DELYHOUSE</title>
     </head>
 <body>
-    <header>
-        <div class="container-fluid">
-    
-            <div class="row barra">
-                <!-- logo -->
-                <div class="logo col-3">
-                    <a href="/">
-                        <img src="/images/logo2.2.png" alt="">
-                    </a>
-                </div>
-    
-                <!-- buscador -->
-                <div class="col-6 buscador">
-                    <form action="/products/search">
-                        <input type="search" name="buscar">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                </div>
-    
-                <!-- login/carrito -->
-                <div class="col-3 buttons">
-                    <% if (typeof user !="undefined" ) { %>
-                        <div class="chip">
-                            <a href="/users/profile"> <img src="/images/users/<%= user.image %> " alt="Person" width="96"
-                                    height="96"></a>
-    
-                        </div>
-                        <% }else{ %>
-                            <a href="/users/login"><i class="fas fa-user-circle"></i></a>
-                            <% } %>
-    
-                                <a href="/products/carrito"><i class="fas fa-cart-arrow-down"></i></a>
-    
-    
-                </div>
-    
-            </div>
-    
-            <!-- categorias -->
-            <div class=" menu">
-                <nav class="navbar navbar-expand-md navbar-light menu-2">
-    
-                    <div class="container-fluid cf">
-    
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-    
-                        <div class="collapse navbar-collapse barraMenu" id="navbarSupportedContent">
-    
-                            <ul class="navbar-nav col-md-12 col-lg-12">
-                                <li><a class="link" href="/">Home</a></li>
-    
-                                <li class="nav-item dropdown">
-                                    <a class="dropdown-toggle" href="/menu" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Menú
-                                    </a>
-                                    <div class="dropdown-menu desplegable " aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="/menu/1">Entradas</a>
-                                        <a class="dropdown-item" href="/menu/2">Plato Principales</a>
-                                        <a class="dropdown-item" href="/menu/3">Postres</a>
-                                        <a class="dropdown-item" href="/menu/4">pasteleria</a>
-                                    </div>
-                                </li>
-    
-                                <li><a class="link" href="">Reservas</a></li>
-    
-                                <li><a class="link" href="/contact">Contacto</a></li>
-    
-                            </ul>
-    
-                        </div>
-                    </div>
-    
-                </nav>
-            </div>
-        </div>
+    <header >
+        <section>
+            <h1>D e l y - H o u s e</h1>
+            <h3>----F a s t   F o o t----</h3>
+        </section>
+        <nav id="contenedor" >
+            <ul id="barra">
+                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="#">NOVEDADES</a></li>
+                <li><a href="#">COMBOS ESPECIALES</a></li>
+               
+            </ul>
+            <ul id="login">
+                <li><a href="login.html">INICIAR SESION</a></li>
+                <li><a href="#">REGISTRATE</a></li>
+            </ul>
+        </nav>
     </header>
+     
     <main>
 
         <div class="container">
             <div class="row card mx-auto car">
                 <div class="col-12 productos-carritos">
+
+
 
                     <div class="col-4">
                         <img src="/images/hamburger.jpg" alt="plato">
@@ -133,6 +60,8 @@
                         </form>
                     </div>
 
+
+
                     <div class="col-4">
                         <img src="/images/cake.jpg" alt="plato">
                     </div>
@@ -156,6 +85,8 @@
                             <a href=""><i class="fas fa-trash-alt"></i></a>
                         </form>
                     </div>
+
+
 
                     <div class="col-4">
                         <img src="/images/pizza.jpg" alt="plato">
@@ -181,8 +112,6 @@
                         </form>
                     </div>
 
-
-
                 </div>
             </div>
 
@@ -202,52 +131,19 @@
 
         </div>
     </main>
+
     <footer>
-
-
-        <div class="footer-dark">
-            <footer>
-                <div class="container">
-                    <div class="footer-contenedor row col-12">
-                        <div class=" col-md-3 item-1">
-                            <h3>Nosotros</h3>
-                            <ul>
-                                <li><a href="/theCompany">La empresa</a></li>
-                                <li><a href="/team">El equipo</a></li>
-                                
-                            </ul>
-                        </div>
-                        <div class=" col-md-3 item-2">
-                            <h3>Acerca de</h3>
-                            <ul>
-                                <li><a href="/contactForCompany">¿Querés ser parte?</a></li>
-                                <li><a href="/questions">Preguntas frecuentes</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 item-text">
-                            <h3>FOOD4ME</h3>
-                            <p>Nuestro objetivo es transformar el concepto de comida rápida en una opción apetitosa y saludable, adaptándonos a las necesidades de cada cliente.</p>
-                        </div>
-                        
-                    </div>
-                    <div class="col-12 item-social">
-                        <a href="https://es-la.facebook.com/" target="_blank"><i class="icon ion-social-facebook"></i></a>
-                        <a href="https://twitter.com/" target="_blank"><i class="icon ion-social-twitter"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="icon ion-social-instagram"></i></a>
-                    </div>
-    
-                </div>
-    
-            </footer>
-            <div class="col-12 copyright">
-                <p class="copyright"> © 2021 Food4me</p>
-            </div>
-        </div>
+        <section>
+            <h7 id="encabezadoFooter">Quienes somos?</h7>
+            <h5>Somos una pagina de comida rapida online de delivery que ofrece 
+            comida aquellas personas que deseen comer de forma rapida y sencilla.
+            Enviando el producto a la ubicacion solicitada.
+            </h5>
+        </section>
+        <section>
+            <h6><i class="fa-solid fa-copyright"></i>2023/2024 Dely-house / Digital House</h6>
+        </section>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
-/body>
+</body>
 </html>
