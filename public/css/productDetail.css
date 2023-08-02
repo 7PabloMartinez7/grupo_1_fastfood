@@ -1,6 +1,7 @@
-body {
-    background-image: linear-gradient(to top, red,rgb(141, 12, 3),rgb(87, 4, 1)) ;
-    color: #ffffff;
+body{
+    background-image: url('../img/fondo1.jpg');
+    background-size: cover;
+    justify-content: center;
 }
 header  {
     font-size: 40px ;
