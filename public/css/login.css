@@ -1,0 +1,82 @@
+body {
+    background-image: url('../images/fondo1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    font-family: fantasy;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 5%;
+    max-width: 100%;
+    max-height: 300px; /* Ajusta la altura máxima para agrandar la imagen */
+}
+
+.login {
+    background-color: rgba(179, 144, 144, 0.911);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+section h1, h3 {
+    text-align: center;
+    color: (255, 255, 255);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+/* Nuevas reglas CSS para el botón "Olvidé mi contraseña" */
+button#forgot-password-btn {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    padding: 0; /* Sin padding */
+    font-size: 14px;
+    text-decoration: underline; /* Subrayado para indicar que es un enlace */
+    color: #000000; /* Color del enlace */
+    cursor: pointer;
+}
+
+button#forgot-password-btn:hover {
+    color: #b30000; /* Cambia el color del enlace al pasar el mouse */
+}
+
+button:hover {
+    background-color: #a86464;
+}
+
+button[type="submit"] {
+    margin-top: 10px; /* Ajusta el valor según el espacio deseado entre los botones y el formulario */
+}
