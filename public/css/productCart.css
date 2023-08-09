@@ -1,10 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin:10px;
+    padding:0px;
+}
+img {
+
+    height: 300px;
+    
+    width: 400px;
+    
+    }
+main{
+    width: 90%;
+    text-align: center;
+    }
+
+section .objetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}
+
+main article{
+    margin: 10px;
+    margin-top: 40px;
+    width: 420px;
+    background-color:white;
+    height: 500px;
+    border-radius: 5px;
+    
+}
+
 body{
     background-image: url('../images/fondo1.jpg');
     background-size: cover;
 }
-section h1,h3{
+section h1{
     text-align: center;
     color: rgb(255, 255, 255);
+    font-family: fantasy;
+}
+section h3{
+    text-align: center;
+    color: rgb(207, 56, 56);
     font-family: fantasy;
 }
 section h1{
@@ -25,6 +64,56 @@ nav ul li a{
     font-family: sans-serif ;
     font-size: 13px;
     color: rgb(255, 255, 255);
+}
+.producto-desc{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.producto-desc span{
+    display: flex;
+    justify-content: center;
+}
+
+i.fa-regular.fa-credit-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.fa-credit-card {
+    font-size: 16px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    color: rgb(46, 182, 46);
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 40px;
+    top: -15px;
+
+}
+i.fa-solid.fa-dollar-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.fa-dollar-sign {
+    font-size: 16px;
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    color: rgb(46, 182, 46);
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    
+    right: 20px;
+    top: -15px;
+
 }
 
 #contenedor{
@@ -76,69 +165,6 @@ nav ul li a{
    color: aqua;
 }
 
-main{
-    width: 90%;
-    text-align: center;
-}
-
-main article{
-    margin: 10px;
-    margin-top: 40px;
-    width: 310px;
-    background-color: white;
-    height: 400px;
-    border-radius: 5px;
-}
-main{
-    text-decoration: none;
-    font-style: italic;
-    font-weight: bold;
-    font-family: sans-serif ;
-    font-size: 0px;
-    color: rgb(255, 255, 255);
-}
-
-main .datos-carrito{
-    text-align: center;
-}
-main h1{
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-}
-main h3{
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-}
-
-
-main input{
-    width: 70%;
-    border-radius: 40px;
-    
-}
-main .delete i{
-    font-size: 20px;
-    color: green;
-}
-main .delete i:hover{
-    font-size: 30px;
-}
-main .precio-carrito .total{
-    border-radius: 15px;
-    font-size: 60px;
-    text-align: center;
-    
-}
-main .precio-carrito button{
-    width: 60%;
-    border-radius: 40px;
-    background-color: #BC0C2B;
-}
-main .precio-carrito button:hover{
-    background-color: #c22d4f;
-}
 footer{
     text-align: center;
     font-family: sans-serif;
