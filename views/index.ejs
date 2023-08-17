@@ -1,31 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home.css">
-    <script src="https://kit.fontawesome.com/eea4f475c8.js" crossorigin="anonymous"></script>
-    <title>Dely-House</title>
-</head>
+    <%- include("./partials/head.ejs") %>
 <body>
-    <header >
-        <section>
-            <h1>D e l y - H o u s e</h1>
-            <h3>----F a s t   F o o t----</h3>
-        </section>
-        <nav id="contenedor" >
-            <ul id="barra">
-                <li><a href="productDetail">PRODUCTOS</a></li>
-                <li><a href="novedades">NOVEDADES</a></li>
-                <li><a href="productCart">CARRITO</a></li>
-               
-            </ul>
-            <ul id="login">
-                <li><a href="/login">INICIAR SESION</a></li>
-                <li><a href="register">REGISTRATE</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include("./partials/header.ejs") %>
     <main >
         <section id="main">
             <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
@@ -36,17 +13,6 @@
             <a href="https://www.gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </section>
     </main>
-    <footer>
-        <section>
-            <h7 id="encabezadoFooter">Quienes somos?</h7>
-            <h5>Somos una pagina de comida rapida online de delivery que ofrece 
-            comida aquellas personas que deseen comer de forma rapida y sencilla.
-            Enviando el producto a la ubicacion solicitada.
-            </h5>
-        </section>
-        <section>
-            <h6><i class="fa-solid fa-copyright"></i>2023/2024 Dely-house / Digital House</h6>
-        </section>
-    </footer>
+    <%- include("./partials/footer.ejs") %>
 </body>
 </html>
