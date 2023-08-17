@@ -29,4 +29,7 @@ app.get("/login",(req,res)=>{
 app.get("/productDetail",(req, res)=>{
    res.sendFile(path.resolve("./views/productDetail.html"));
 })
+app.get("/novedades",(req, res)=>{
+   res.sendFile(path.resolve("./views/novedades.html"));
+})
 
