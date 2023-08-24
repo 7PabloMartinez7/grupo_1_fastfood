@@ -4,7 +4,7 @@ const app= express();
 const publicPath = path.resolve (__dirname, "./public");
 
 const rutasIndex= require("./routes/index.js")
-const rutasProduct= require("./routes/productDetail.js")
+const productDetail= require("./routes/productDetail.js")
 //para que funciente ejs se usa app.set
 app.set("view engine", "ejs")
 
@@ -12,7 +12,8 @@ app.set("view engine", "ejs")
 app.use (express.static(publicPath));
 
 app.use("/", rutasIndex)
-app.use("/productDetail", rutasProduct)
+app.use("/producto", productDetail)
+
 app.listen(5000,() => {
     console.log ("Servidor corriendo en el puerto 5000");
  } );
