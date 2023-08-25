@@ -1,16 +1,10 @@
 body{
     background-image: url('../images/fondo1.jpg');
     background-size: cover;
-    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-header  {
-    font-size: 40px ;
-    text-align: center;
-    font-family: sans-serif;
-    color: rgb(250, 250, 250);
-    padding: 25px;
-    margin-top: 25px;
-}
+
 #A1 {
     width: 700px;
 }
@@ -50,9 +44,4 @@ article h3, h4 {
 #DC {
     padding-bottom: 50px;
 }
-footer {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 15px;
-    
-}
+
