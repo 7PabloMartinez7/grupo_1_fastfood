@@ -5,18 +5,20 @@ const publicPath = path.resolve (__dirname, "./public");
 //Rutas requeridas
 const Index= require("./routes/index.js")
 const product= require("./routes/product.js")
+const productCart= require("./routes/productoCarrito.js")
 const Novedades= require("./routes/novedades.js")
 const registro= require("./routes/registro.js")
+const login= require("./routes/login.js")
 //para que funciente ejs se usa app.set
 app.set("view engine", "ejs")
 app.use (express.static(publicPath));
 //rutas 
 app.use("/", Index)
-app.use("/producto", product)
-app.use("/carrito", product)
-app.use("/novedades", Novedades)
-app.use("/registro", registro)
-app.use("/login", registro)
+app.use("/", product)
+app.use("/", productCart)
+app.use("/", Novedades)
+app.use("/", registro)
+app.use("/", login)
 //levantar servidor
 app.listen(5000,() => {
     console.log ("Servidor corriendo en el puerto 5000");
