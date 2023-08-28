@@ -1,0 +1,65 @@
+[
+{
+    "id":1,
+    "firstName":"vulputate elementum",
+    "lastName":"viverra pede",
+    "email":"sveelers0@ucsd.edu",
+    "password":"qD1\"oXEkL",
+    "type":"Customer",
+    "avatar":"/images/avatars/polloCorazon.jpg"
+},
+{
+    "id":2,
+    "firstName":"nonummy",
+    "lastName":"suspendisse potenti",
+    "email":"aattaway1@ihg.com",
+    "password":"jN9&wPidmIiq#",
+    "type":"Customer",
+    "avatar":""
+},
+{
+    "id":3,
+    "firstName":"eget",
+    "lastName":"ut volutpat",
+    "email":"jgoulter2@wikipedia.org",
+    "password":"qV9<UHb7",
+    "type":"Customer",
+    "avatar":""
+},
+{
+    "id":4,
+    "firstName":"quis",
+    "lastName":"vivamus",
+    "email":"anewham3@boston.com",
+    "password":"oI1.$\"t\\B",
+    "type":"Customer",
+    "avatar":"/images/avatars/pretzel.jpg"
+},
+{
+    "id":5,
+    "firstName":"mi in",
+    "lastName":"in",
+    "email":"epossel4@yale.edu",
+    "password":"qE8+CX\\T/eo)",
+    "type":"Admin",
+    "avatar":"/images/avatars/pletzale.jpg"
+},
+{
+    "id":6,
+    "firstName":"vulputate",
+    "lastName":"ut",
+    "email":"dmarcq5@discuz.net",
+    "password":"fG1!m`l(b",
+    "type":"Admin",
+    "avatar":"/images/avatars/kipa.jpg"
+},
+{
+    "id":7,
+    "firstName":"lacinia",
+    "lastName":"morbi non",
+    "email":"cwhitwam6@imgur.com",
+    "password":"dJ6)#g\"LsGcUEW",
+    "type":"Admin",
+    "avatar":"/images/avatars/pletzale.jpg"
+}
+]
