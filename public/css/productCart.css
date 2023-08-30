@@ -8,14 +8,17 @@
     text-align: center;
     color: white;
 }
-article{
+.articulo{
     margin: 10px;
     margin-top: 40px;
     width: 25vw;
     height: 80vh;
     border: 1px solid rgb(90, 88, 88);
-    background-color:rgba(0, 0, 0, 0.521);
+    background-color:rgba(124, 121, 121, 0.753);
     border-radius: 5px;
+}
+.articulo p{
+    color: #FFF;
 }
 #img{
     margin-top: 10px;
@@ -23,15 +26,16 @@ article{
     height: 200px;
 }
 .producto-desc{
-    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
-    position: relative;
+    
 }
 
-.producto-desc span{
-    display: flex;
-    justify-content: center;
-}
+
 
 i.fa-regular.fa-credit-card {
     display: flex;
@@ -44,9 +48,9 @@ i.fa-regular.fa-credit-card {
     padding: 2px;
     width: 30px;
     height: 30px;
-    color: rgb(46, 182, 46);
-    border: 1px solid #39b54a;
-    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    background-color: #c71755;
     border-radius: 50%;
     right: 40px;
     top: -15px;
@@ -59,18 +63,15 @@ i.fa-solid.fa-dollar-sign {
 }
 
 .fa-dollar-sign {
-    font-size: 16px;
-    padding: 2px;
-    width: 30px;
-    height: 30px;
-    color: rgb(46, 182, 46);
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    right: 20px;
-    top: -15px;
-
+    padding: 15px;
+    width: 50px;
+    color: rgb(255, 255, 255);
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    background-color: #c71755;
+    
 }
+
 .precio-carrito{
     display: flex;
     flex-wrap: wrap;
