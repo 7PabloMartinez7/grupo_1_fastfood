@@ -50,7 +50,7 @@ input {
     border-radius: 4px;
 }
 
-button {
+.button {
     padding: 8px 10px;
     background-color: #ffffff;
     color: #000000;

@@ -74,9 +74,7 @@ nav ul li a{
     box-shadow: 1px 1px 0px;
     transition: all 450ms;
 }
-#login hr{
-   color: aqua;
-}
+
 #main{
     display: flex;
     flex-wrap: wrap;

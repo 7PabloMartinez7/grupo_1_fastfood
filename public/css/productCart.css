@@ -1,72 +1,29 @@
-* {
-    box-sizing: border-box;
-    margin:10px;
-    padding:0px;
-}
-img {
-
-    height: 300px;
-    
-    width: 400px;
-    
-    }
-main{
-    width: 90%;
-    text-align: center;
-    }
-
-section .objetos{
+.objetos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: auto;
-}
-
-main article{
-    margin: 10px;
-    margin-top: 40px;
-    width: 420px;
-    background-color:white;
-    height: 500px;
-    border-radius: 5px;
     
 }
-
-body{
-    background-image: url('../images/fondo1.jpg');
-    background-size: cover;
-}
-section h1{
+.titular{
     text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: fantasy;
+    color: white;
 }
-section h3{
-    text-align: center;
-    color: rgb(207, 56, 56);
-    font-family: fantasy;
+article{
+    margin: 10px;
+    margin-top: 40px;
+    width: 25vw;
+    height: 80vh;
+    border: 1px solid rgb(90, 88, 88);
+    background-color:rgba(0, 0, 0, 0.521);
+    border-radius: 5px;
 }
-section h1{
-    font-size: 50px;
-    margin-bottom: 0px;
-}
-section h3{
-    margin-top: 0px;
-    font-size:30px ;
-}
-nav ul{
-    list-style: none;
-}
-nav ul li a{
-    text-decoration: none;
-    font-style: italic;
-    font-weight: bold;
-    font-family: sans-serif ;
-    font-size: 13px;
-    color: rgb(255, 255, 255);
+#img{
+    margin-top: 10px;
+    width: 90%;
+    height: 200px;
 }
 .producto-desc{
-    border-top: solid 1px #ebebeb;
+    
     padding: 15px;
     position: relative;
 }
@@ -89,7 +46,7 @@ i.fa-regular.fa-credit-card {
     height: 30px;
     color: rgb(46, 182, 46);
     border: 1px solid #39b54a;
-    background-color: #FFF;
+    background-color: #ffffff;
     border-radius: 50%;
     right: 40px;
     top: -15px;
@@ -110,72 +67,44 @@ i.fa-solid.fa-dollar-sign {
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    
     right: 20px;
     top: -15px;
 
 }
-
-#contenedor{
+.precio-carrito{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    
+    width: 30vw;
+    margin: auto;
 }
-
-
-#barra{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0px;
-}
-#barra li a{
-    padding: 3px 6px;
-    margin-left: 50px;
-    margin-right: 30px;
+.comprar,.cancelar{
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 15px;
+    width: 150px;
+    margin: auto;
+    font-family:sans-serif;
+    font-size: 20px;
+    color: #FFF;
     background-color: #c71755;
     box-shadow: 1px 1px 0px;
     transition: all 450ms;
 }
-#barra li a:hover{
-    padding: 10px;
-    color: rgb(231, 229, 229);
+.comprar:hover , .cancelar:hover{
     background-color:rgb(71, 16, 43) ;
     border-radius: 50%;
 }
-#login li a:hover{
-    padding: 10px;
-    color: rgb(231, 229, 229);
-    background-color:rgb(40, 16, 71) ;
-    border-radius: 50%;
+.cancelar{
+    margin-top: 5px;
 }
-#login{
-     display: flex;
-     flex-wrap: wrap;
-     margin: 0px;
-}
-#login li a{
-    padding: 3px 6px;
-    margin-left: 20px;
-    background-color: #c71755;
-    box-shadow: 1px 1px 0px;
-    transition: all 450ms;
-}
-#login hr{
-   color: aqua;
-}
-
-footer{
+.total{
     text-align: center;
+    margin-top: 10px;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 5px;
+    margin-bottom: 150px;
     font-family: sans-serif;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.397) ;
-    
-}
-#encabezadoFooter{
-    font-size: 25px;
-    font-style: italic;
-    font-weight: bold;
-    font-family: sans-serif ;
-    color: rgb(255, 255, 255);
 }
