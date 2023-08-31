@@ -80,7 +80,8 @@ nav ul li a{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 225px;
+    height: 60vh;
+    
 }
 #main a{
     margin-left: 35px;
