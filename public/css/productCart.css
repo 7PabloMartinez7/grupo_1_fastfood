@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color:rgba(12, 12, 12, 0.774);
     
 }
 .titular{
@@ -12,7 +13,7 @@
     margin: 10px;
     margin-top: 40px;
     width: 25vw;
-    height: 80vh;
+    height: 90vh;
     border: 1px solid rgb(90, 88, 88);
     background-color:rgba(124, 121, 121, 0.753);
     border-radius: 5px;
@@ -23,7 +24,7 @@
 #img{
     margin-top: 10px;
     width: 90%;
-    
+    height: 250px;
 }
 .producto-desc{
     display: flex;
@@ -34,7 +35,10 @@
     padding: 15px;
     
 }
-
+.descripcionCarrito{
+    color: #000000;
+    font-family: sans-serif;
+}
 
 
 i.fa-regular.fa-credit-card {
