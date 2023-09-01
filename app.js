@@ -9,6 +9,7 @@ const productCart= require("./routes/productoCarrito.js")
 const Novedades= require("./routes/novedades.js")
 const registro= require("./routes/registro.js")
 const login= require("./routes/login.js")
+const newProduct= require ("./routes/newProducto.js")
 //para que funciente ejs se usa app.set
 app.set("view engine", "ejs")
 app.use (express.static(publicPath));
@@ -19,6 +20,7 @@ app.use("/", productCart)
 app.use("/", Novedades)
 app.use("/", registro)
 app.use("/", login)
+app.use("/", newProduct)
 //levantar servidor
 app.listen(5000,() => {
     console.log ("Servidor corriendo en el puerto 5000");
