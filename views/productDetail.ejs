@@ -4,15 +4,15 @@
 <body>
     <%- include("./partials/header.ejs") %>
     <main>
-        <% products.forEach(product => {
+        <% product.forEach(product => {
             %>
             <section>
-                <article >
-                    <h3><%products.name%></h3>
-                    <h4><%products.description%></h4>
-                    <h4>$<%products.price%></h4>   
-                    <img src="/images/<%= products.image %>" alt="imagen">
-            </article>
+                <article id="articuloProduct">
+                    <h3><%=product.name%></h3>
+                    <h4><%=product.description%></h4>
+                    <h4>$<%=product.price%></h4>   
+                    <center><img id="imagenProduct" src="/images/<%= product.image %>" alt="imagen"></center>
+                </article>
             </section>
             <% 
         }) %>

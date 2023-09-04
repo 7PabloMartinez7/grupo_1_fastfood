@@ -4,8 +4,7 @@ const productoJson = path.join(__dirname,"../data/products.json")
 const productController = {
     product: (req,res) => {
         const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
-        console.log(product[0])
-        res.render ("productDetail")
+        res.render ("productDetail", {product:product})
     }
 }
 module.exports = productController;

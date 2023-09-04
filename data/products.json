@@ -1,24 +1,24 @@
 [
     {"id":1,
-    "name":"burger americana",
+    "name":"BURGER AMERICANA",
     "description":"pan de papa, bacon, cheddar, medallon de carne ",
     "price":1800,
     "image":"burgerA2.png"
     },
     {"id":2,
-    "name":"burger clasica",
+    "name":"BURGER CLASICA",
     "description":"pan de papa, lechuga, tomate, queso dambo, medallon de carne ",
     "price":1700,
     "image":"burgerS.png"
     },
     {"id":3,
-    "name":"pizza muzzarella",
+    "name":"PIZZA MUZARELLA",
     "description":"queso muzzarella, oregano, aceituna",
     "price":1800,
     "image":"pizzaM2.png"
     },
     {"id":4,
-    "name":"pizza napolitana",
+    "name":"PIZZA NAPOLITANA",
     "description":"muzzarella, jamon cocido, tomate cortado ",
     "price":1900,
     "image":"pizzaN2.png"
