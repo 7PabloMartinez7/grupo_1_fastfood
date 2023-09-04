@@ -1,28 +1,26 @@
 [
     {"id":1,
-    "name":"turpis integer aliquet",
-    "image":"prenda6.png",
-    "description":"asellus cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec","features":"etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero",
-    "price":3748.37
+    "name":"burger americana",
+    "description":"pan de papa, bacon, cheddar, medallon de carne ",
+    "price":1800,
+    "image":"burgerA2.png"
     },
     {"id":2,
-    "name":"at dolor quis odio consequat varius",
-    "image":"prenda2.png",
-    "description":" nulla neque libero convallis eget eleifend",
-    "price":2859.3},
+    "name":"burger clasica",
+    "description":"pan de papa, lechuga, tomate, queso dambo, medallon de carne ",
+    "price":1700,
+    "image":"burgerS.png"
+    },
     {"id":3,
-    "name":"sit amet consectetuer adipiscing elit proin interdum mauris",
-    "image":"prenda4.png",
-    "description":" duis mattis egestas",
-    "price":6000.75},
+    "name":"pizza muzzarella",
+    "description":"queso muzzarella, oregano, aceituna",
+    "price":1800,
+    "image":"pizzaM2.png"
+    },
     {"id":4,
-    "name":"adipiscing elit proin risus",
-    "image":"prenda3.png",
-    "description":" convallis nulla",
-    "price":3072.65},
-    {"id":5,
-    "name":"nec molestie sed justo",
-    "image":"prenda1.png",
-    "description":" neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl",
-    "price":600.09}   
+    "name":"pizza napolitana",
+    "description":"muzzarella, jamon cocido, tomate cortado ",
+    "price":1900,
+    "image":"pizzaN2.png"
+    } 
 ]
