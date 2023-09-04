@@ -22,5 +22,35 @@
     "description":"muzzarella, jamon cocido, tomate cortado ",
     "price":1900,
     "image":"pizzaN2.png"
+    } ,
+    {"id":5,
+    "name":"PANCHO COMPLETO",
+    "description":"queso, papas pays y topping a eleccion",
+    "price":1000,
+    "image":"pancho.png"
+    } ,
+    {"id":6,
+    "name":"NAPOLITANA",
+    "description":"huevo, papas fritas con cebolla de verdeo y limon ",
+    "price":2200,
+    "image":"napo 1.png"
+    } ,
+    {"id":7,
+    "name":"SANDWICH DE LOMITO",
+    "description":"paleta,huevo,queso,lechuga",
+    "price":1300,
+    "image":"lomito.png"
+    } ,
+    {"id":8,
+    "name":"SANDWICH DE MILANESA",
+    "description":"paleta,huevo,queso,lechuga ",
+    "price":1300,
+    "image":"milanesa.png"
+    } ,
+    {"id":9,
+    "name":"EMPANADA",
+    "description":"de masa cacera, de pollo,queso y carne",
+    "price":2100,
+    "image":"empanadas.png"
     } 
 ]
