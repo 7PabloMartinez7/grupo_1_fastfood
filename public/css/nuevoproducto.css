@@ -1,0 +1,31 @@
+#formularioNewProd{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    width: 50vw;
+    height: 80vh;
+    justify-content: center;
+}
+#NombreProd , #DescripcionProd , #PrecioProd, #ImagenProd,#EnviarProd,#CancelarProd {
+    width: 30%;
+    margin: auto;
+}
+#ImagenProd{
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+#EnviarProd{
+    margin-top: 10px;
+    background-color: brown;
+    border: 1px solid black;
+}
+#CancelarProd{
+    margin-top: 10px;
+    margin-bottom: 100px;
+    color: white;
+    background-color: brown;
+    border-radius: 15px;
+    padding: 20px;
+}
