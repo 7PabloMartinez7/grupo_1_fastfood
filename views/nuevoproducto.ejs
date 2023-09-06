@@ -5,7 +5,7 @@
     <%- include("./partials/header.ejs") %>
     <main >
         <section id="mainNewProducto">
-            <form method="POST" action="/agregarProducto" id="formularioNewProd"  > 
+            <form method="POST" action="/agregarProducto" id="formularioNewProd" enctype="multipart/form-data" > 
                 <label for="NombreProd"></label>
                 <input type="text"  name="NombreProd" placeholder="Nombre Del Producto" id="NombreProd">
                 

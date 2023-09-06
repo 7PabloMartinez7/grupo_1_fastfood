@@ -13,7 +13,7 @@ const newProductController ={
             name:data.NombreProd,
             description:data.DescripcionProd,
             price:data.PrecioProd,
-            image:"default-image"
+            image:req.file ? req.file.filename : "default-image.png"
         }
         //guardar en el array
         product.push(newProduct)

@@ -15,6 +15,7 @@ const productController = {
     },
     eliminar: (req,res) =>{
         const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
+        //filtra en la variable productoFiltrado todos los archivos que NO tengan el id encontrado
         const productoFiltrado=product.filter(product=>{
             return product.id != req.params.id
         })
@@ -32,13 +33,13 @@ const productController = {
         const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
 		const productToEdit = product.find(product =>{
 			return product.id == req.params.id;	
-		});
+		})
         let productoEditado={
             id: req.params.id,
             name:req.body.NombreProd,
             description: req.body.DescripcionProd,
             price:req.body.PrecioProd,
-            image:productToEdit.image,
+            image:req.file ? req.file.filename : productToEdit.image,
         }
         //busca la posicion en el array del producto que estamos editando
         let productEncontrado = product.findIndex(product =>{

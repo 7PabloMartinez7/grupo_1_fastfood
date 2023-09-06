@@ -6,7 +6,7 @@
     <main >
         <section id="mainNewProducto">
             <h5 id="subtituloEditProduct">Estas editando: <i><%=product.name%></i></h5>
-            <form method="POST" action="/producto/editar/<%= product.id %>/?_method=PUT" id="formularioNewProd"  > 
+            <form method="POST" action="/producto/editar/<%= product.id %>/?_method=PUT" id="formularioNewProd" enctype="multipart/form-data" > 
                 
                 <label for="NombreProd"></label>
                 <input type="text"  name="NombreProd" value="<%=product.name%>" id="NombreProd">
