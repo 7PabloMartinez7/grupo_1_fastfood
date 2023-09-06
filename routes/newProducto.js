@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
     },
 });
 const upload = multer({storage: storage});
-//crear producto
+//crear producto (nuevoproducto.ejs)
 router.get("/agregarProducto",newProductController.crear);
 //guardar producto
 //dentro de upload.single("nombreDelInput")

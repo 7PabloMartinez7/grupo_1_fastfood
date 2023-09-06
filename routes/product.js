@@ -16,13 +16,14 @@ const storage = multer.diskStorage({
     },
 });
 const upload = multer({storage: storage});
-//pagina de todos los productos
+//pagina de todos los productos (product.ejs)
 router.get("/producto",product.product); 
-//producto particular
+//producto particular (detalle.ejs)
 router.get("/producto/detalle/:id/",product.detalle); 
-//producto eliminado
+//producto eliminado 
 router.delete("/producto/eliminado/:id/",product.eliminar);
-//editar producto y guardar producto editado, primero mostramos la vista de edicion con get y guardamos con put
+//editar producto y guardar producto editado,
+//primero mostramos la vista de edicion con get y guardamos con put(editar.ejs)
 router.get("/producto/editar/:id/",product.editar);
 router.put("/producto/editar/:id/",upload.single("ImagenProd"),product.editarGuardar);
 module.exports=router;
