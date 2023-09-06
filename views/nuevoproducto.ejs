@@ -5,21 +5,22 @@
     <%- include("./partials/header.ejs") %>
     <main >
         <section id="mainNewProducto">
-            <form id="formularioNewProd" action=""> 
+            <form method="POST" action="/agregarProducto" id="formularioNewProd"  > 
                 <label for="NombreProd"></label>
-                <input type="text"  name="Nombre" placeholder="Nombre Del Producto" id="NombreProd">
+                <input type="text"  name="NombreProd" placeholder="Nombre Del Producto" id="NombreProd">
                 
                 <label for="DescripcionProd"></label>
-                <input type="text" name="Descripcion" placeholder="Descripcion" id="DescripcionProd">
+                <input type="text" name="DescripcionProd" placeholder="Descripcion" id="DescripcionProd">
                 
                 <label for="PrecioProd"></label>
-                <input type="number" name="Precio" min="0" placeholder="Precio" id="PrecioProd">
+                <input type="number" name="PrecioProd" min="0" placeholder="Precio" id="PrecioProd">
                 
                 <label for="ImagenProd"></label>
-                <input type="file" name="Imagen"  id="ImagenProd">
+                <input type="file" name="ImagenProd"  id="ImagenProd">
                 
-                <input type="submit" value="Enviar" id="EnviarProd">
+                <input type="submit" value="Guardar" id="EnviarProd">
                 <input type="reset" value="Cancelar" id="CancelarProd">
+                
             </form>
         </section>
     </main>
