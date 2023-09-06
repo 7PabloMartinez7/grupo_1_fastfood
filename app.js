@@ -4,22 +4,22 @@ const app= express();
 const publicPath = path.resolve (__dirname, "./public");
 //Rutas requeridas
 const Index= require("./routes/index.js")
-const product= require("./routes/product.js")
-const productCart= require("./routes/productoCarrito.js")
-const Novedades= require("./routes/novedades.js")
 const registro= require("./routes/registro.js")
 const login= require("./routes/login.js")
+const Novedades= require("./routes/novedades.js")
+const product= require("./routes/product.js")
+const productCart= require("./routes/productoCarrito.js")
 const newProduct= require ("./routes/newProducto.js")
 //para que funciente ejs se usa app.set
 app.set("view engine", "ejs")
 app.use (express.static(publicPath));
 //rutas 
 app.use("/", Index)
-app.use("/", product)
-app.use("/", productCart)
-app.use("/", Novedades)
 app.use("/", registro)
 app.use("/", login)
+app.use("/", Novedades)
+app.use("/", product)
+app.use("/", productCart)
 app.use("/", newProduct)
 //levantar servidor
 app.listen(5000,() => {

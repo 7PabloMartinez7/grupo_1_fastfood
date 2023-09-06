@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/header.ejs") %>
+    <main >
+        <section >
+            <article id="articuloDetalle">
+                <div id="caja1Detalle">
+                    <center><img id="imagenProductDetail" src="/images/<%= product.image %>" alt="imagen"></center>
+                    <h4><%=product.description%></h4>
+                </div>
+                <div id="caja2Detalle">
+                    <h3><%=product.name%></h3>
+                    <h4>$<%=product.price%></h4>
+                    <form id="botonesDetalle" action="">
+                        <input id="comprarDetalle"type="submit" value="Comprar"> 
+                        <div id="botonesDetalle2">
+                            <input id="cancelarDetalle" type="reset" value="Cancelar">
+                            <input id="editarDetalle" type="submit"value="Editar">
+                        </div>
+                    </form>
+                </div>      
+            </article>
+        </section>
+    </main>
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>

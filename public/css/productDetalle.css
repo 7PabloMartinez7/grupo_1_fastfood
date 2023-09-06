@@ -1,0 +1,73 @@
+#articuloDetalle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70vw;
+    height: 70vh;
+    margin: 50px auto 150px auto;
+    background-color: #c71755c9;
+    box-shadow:inset -5px -5px 20px 0 rgb(102, 99, 99);
+    border-radius: 15px;
+}
+#caja1Detalle{
+    width: 60%;
+    height: 100%;
+   
+}
+#caja1Detalle h4{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#imagenProductDetail{
+    width: 70%;
+    height: 380px;
+    
+}
+#caja2Detalle{
+    width: 30%;
+}
+#caja2Detalle h3{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#caja2Detalle h4{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#botonesDetalle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+#botonesDetalle2{
+    margin:auto;
+    margin-top: 15px;
+    
+}
+
+#comprarDetalle , #cancelarDetalle , #editarDetalle{
+    border-radius: 15px;
+    padding: 15px;
+    width: 100px;
+    margin: auto;
+    font-family:sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color:red;
+    border: black;
+    box-shadow: 1px 1px 0px black;
+    transition: all 450ms;
+}
+#comprarDetalle {
+    width: 70%;
+}
+
+#comprarDetalle:hover , #editarDetalle:hover ,#cancelarDetalle:hover{
+    background-color:rgb(255, 0, 123) ;
+    border-radius: 50%;
+}

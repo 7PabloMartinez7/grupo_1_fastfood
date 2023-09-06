@@ -1,0 +1,19 @@
+body{
+    background-image: url('../images/fondo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.a{
+    text-decoration: none;
+}
+#imagenProduct{
+    width: 40vw;
+}
+#articuloProduct{
+    margin-bottom: 100px;
+}
+
+#articuloProduct h3,h4{
+    font-family: sans-serif;
+}
