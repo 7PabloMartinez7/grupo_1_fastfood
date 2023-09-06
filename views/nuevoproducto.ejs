@@ -7,16 +7,16 @@
         <section id="mainNewProducto">
             <form method="POST" action="/agregarProducto" id="formularioNewProd" enctype="multipart/form-data" > 
                 <label for="NombreProd"></label>
-                <input type="text"  name="NombreProd" placeholder="Nombre Del Producto" id="NombreProd">
+                <input type="text"  name="NombreProd" placeholder="Nombre Del Producto" id="NombreProd" required>
                 
                 <label for="DescripcionProd"></label>
-                <input type="text" name="DescripcionProd" placeholder="Descripcion" id="DescripcionProd">
+                <input type="text" name="DescripcionProd" placeholder="Descripcion" id="DescripcionProd" required>
                 
                 <label for="PrecioProd"></label>
-                <input type="number" name="PrecioProd" min="0" placeholder="Precio" id="PrecioProd">
+                <input type="number" name="PrecioProd" min="0" placeholder="Precio" id="PrecioProd" required>
                 
                 <label for="ImagenProd"></label>
-                <input type="file" name="ImagenProd"  id="ImagenProd">
+                <input type="file" name="ImagenProd"  id="ImagenProd" required>
                 
                 <input type="submit" value="Guardar" id="EnviarProd">
                 <input type="reset" value="Cancelar" id="CancelarProd">
@@ -27,3 +27,4 @@
     <%- include("./partials/footer.ejs") %>
 </body>
 </html>
+<!--  -->
