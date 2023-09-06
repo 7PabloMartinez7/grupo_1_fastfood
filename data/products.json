@@ -1,9 +1,9 @@
 [
  {
-  "id": 1,
+  "id": "1",
   "name": "BURGER AMERICANA",
-  "description": "pan de papa, bacon, cheddar, medallon de carne ",
-  "price": 1800,
+  "description": "medallon de carne, cheddar, panceta ahumada",
+  "price": "1800",
   "image": "burgerA2.png"
  },
  {
@@ -58,8 +58,8 @@
  {
   "id": 9,
   "name": "EMPANADA",
-  "description": "de masa cacera, de pollo,queso y carne",
-  "price": 2100,
+  "description": "De masa cacera, de queso, pollo y carne",
+  "price": "2100",
   "image": "empanadas.png"
  }
 ]

@@ -13,13 +13,19 @@
                 <div id="caja2Detalle">
                     <h3><%=product.name%></h3>
                     <h4>$<%=product.price%></h4>
-                    <form id="botonesDetalle" action="">
-                        <input id="comprarDetalle"type="submit" value="Comprar"> 
+                    <div id="botonesDetalle">
+                        <form  action="">
+                            <input id="comprarDetalle"type="submit" value="Comprar">
+                        </form> 
                         <div id="botonesDetalle2">
-                            <input id="cancelarDetalle" type="reset" value="Cancelar">
-                            <input id="editarDetalle" type="submit"value="Editar">
-                        </div>
-                    </form>
+                            <form action="/producto/eliminado/<%=product.id%>?_method=DELETE" method="POST">
+                                <input id="eliminarDetalle" type="submit" value="Eliminar">
+                            </form>
+                            <form action="">
+                                <a id="editarDetalle" href="/producto/editar/<%=product.id%>">Editar</a>
+                            </form>
+                        </div>  
+                    </div>       
                 </div>      
             </article>
         </section>

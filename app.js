@@ -1,7 +1,9 @@
 const express = require ("express");
 const path = require ("path"); 
+const methodOverride= require("method-override")
 const app= express();
 const publicPath = path.resolve (__dirname, "./public");
+
 //Rutas requeridas
 const Index= require("./routes/index.js");
 const registro= require("./routes/registro.js");
@@ -16,6 +18,8 @@ app.use (express.static(publicPath));
 //para que reciba formularios
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
+//para usar los metodos PUT y DELETE
+app.use(methodOverride("_method"));
 //rutas 
 app.use("/", Index);
 app.use("/", registro);

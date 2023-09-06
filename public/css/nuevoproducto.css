@@ -4,7 +4,7 @@
     flex-direction: column;
     margin: auto;
     width: 50vw;
-    height: 80vh;
+    height: 100vh;
     justify-content: center;
 }
 #NombreProd , #DescripcionProd , #PrecioProd, #ImagenProd,#EnviarProd,#CancelarProd {
@@ -28,4 +28,10 @@
     background-color: brown;
     border-radius: 15px;
     padding: 20px;
+}
+/*DEL EDITOR DE PRODUCTO*/
+#subtituloEditProduct{
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 25px;
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/header.ejs") %>
+    <main >
+        <section id="mainNewProducto">
+            <h5 id="subtituloEditProduct">Estas editando: <i><%=product.name%></i></h5>
+            <form method="POST" action="/producto/editar/<%= product.id %>/?_method=PUT" id="formularioNewProd"  > 
+                
+                <label for="NombreProd"></label>
+                <input type="text"  name="NombreProd" value="<%=product.name%>" id="NombreProd">
+                
+                <label for="DescripcionProd"></label>
+                <input type="text" name="DescripcionProd" value="<%=product.description%>" id="DescripcionProd">
+                
+                <label for="PrecioProd"></label>
+                <input type="text" name="PrecioProd" value="<%=product.price%>" placeholder="NO COLOCAR SIMBOLO PESOS" id="PrecioProd">
+                
+                <label for="ImagenProd"></label>
+                <input type="file" name="ImagenProd"  id="ImagenProd" value="/images/<%= product.image %>">
+                
+                <input type="submit" value="Guardar" id="EnviarProd">
+                <input type="reset" value="Cancelar" id="CancelarProd">
+                
+            </form>
+        </section>
+    </main>
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>
