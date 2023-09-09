@@ -4,7 +4,7 @@
   "name": "BURGER AMERICANA",
   "description": "medallon de carne, cheddar, panceta ahumada",
   "price": "1800",
-  "image": "product-1693984822903.png"
+  "image": "product-1694008129068.png"
  },
  {
   "id": 2,
@@ -58,8 +58,8 @@
  {
   "id": 9,
   "name": "EMPANADA",
-  "description": "De masa cacera, de queso, pollo y carne",
+  "description": "De masa casera, de queso, pollo y carne",
   "price": "2100",
-  "image": "empanadas.png"
+  "image": "product-1694008202617.png"
  }
 ]
