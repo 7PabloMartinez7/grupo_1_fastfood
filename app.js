@@ -3,6 +3,7 @@ const path = require ("path");
 const methodOverride= require("method-override")
 const app= express();
 const publicPath = path.resolve (__dirname, "./public");
+const session = require ("express-session");
 
 //Rutas requeridas
 const Index= require("./routes/index.js");
@@ -20,6 +21,8 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 //para usar los metodos PUT y DELETE
 app.use(methodOverride("_method"));
+//para usar express-session global
+app.use (session({secret: "secreto!!!"}));
 //rutas 
 app.use("/", Index);
 app.use("/", registro);
