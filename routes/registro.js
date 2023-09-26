@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const multer = require ("multer");
 const registroController = require("../controllers/registroController.js");
 router.get("/registro",registroController.registro); 
 module.exports=router;
