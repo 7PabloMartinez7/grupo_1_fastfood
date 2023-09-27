@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const multer = require ("multer");
+const path = require ("path");
 const registroController = require("../controllers/registroController.js");
 router.get("/registro",registroController.registro); 
 //configurando multer para leer archivos
@@ -16,6 +17,6 @@ const storage = multer.diskStorage({
     },
 });
 const upload = multer ({storage: storage});
-router.post("/registro", upload.single("avatar"),registroController.registro);
+router.post("/registro", upload.single("avatar"),registroController.registroGuardado);
 
 module.exports=router;
