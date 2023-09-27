@@ -16,5 +16,6 @@ const storage = multer.diskStorage({
     },
 });
 const upload = multer ({storage: storage});
+router.post("/registro", upload.single("avatar"),registroController.registro);
 
 module.exports=router;

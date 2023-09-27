@@ -5,7 +5,7 @@
   <%- include("./partials/header.ejs") %>
   <main>
     <div class="container">
-      <form action="" >
+      <form action="/registro" method="POST" enctype="multipart/form-data">
           <h1 class="form-titulo">REGISTRATE A</h1>
           <h1 class="form-titulo">DELY-HOUSE</h1>
           <div class="input">
@@ -25,8 +25,8 @@
             <input type="password" id="contrasenia" required>
           </div>
           <div>
-            <label for="seleccionimagen">Seleccionar una imagen para el perfil:</label>
-            <input type="file" name="avatar" accept=".jpg" multiple>
+            <label for="avatar">Seleccionar una imagen para el perfil:</label>
+            <input type="file" name="avatar">
           </div>
           <div class="recuerdame">
             <input type="checkbox" name="recuerdame" id="Recuerdame">
