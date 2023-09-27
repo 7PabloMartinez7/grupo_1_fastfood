@@ -14,5 +14,13 @@
   "email": "markitoxxx@gmail.com",
   "contraseña": "1234",
   "avatar": "avatar-1695823371092.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Pablo",
+  "apellido": "Cussi",
+  "email": "pabletox@gmail.com",
+  "contraseña": "$2a$10$51TygSS43KBh.qcBRnAjVOtA8N9WzLCdLPfHNJGrwVo3CYnup6Rbe",
+  "avatar": "avatar-1695824748052.jpg"
  }
 ]

@@ -1,6 +1,7 @@
 const { json } = require("express")
 const fs=require("fs")
 const path = require ("path")
+const bcrypt = require ("bcryptjs")
 const users = path.join(__dirname,"../data/users.json")
 const registroController = {
     registro: (req,res) => {
@@ -14,7 +15,7 @@ const registroController = {
             nombre: data.nombre, 
             apellido: data.apellido,
             email: data.email,
-            contraseña: data.contrasenia,
+            contraseña: bcrypt.hashSync(data.contrasenia, 10),
             avatar: req.file ? req.file.filename: "default-image.png"
         }
         usuario.push(registroUsuario)
