@@ -20,7 +20,9 @@ const registroController = {
         }
         usuario.push(registroUsuario)
         fs.writeFileSync(users, JSON.stringify(usuario, null, " "))
-        res.send ("registro exitoso")
+        res.redirect ("/login");
+        //res.send ("registro exitoso")
+        //redireccion a pagina login
     }
 }
 module.exports = registroController;

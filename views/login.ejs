@@ -2,15 +2,32 @@
 <html lang="en">
     <%- include("./partials/head.ejs") %>
 <body class="body-login">
+    
+    <% if (typeof errors != !undefined!) { %>
+        <p style="color:red"> ERROR</p>
+        <ul>
+            <% for (let i=0; i < errors.length; i++) { %>
+                <li>
+                    <%=<errors[i].msg%>
+                </li>
+            <% } %>
+
+        </ul>
+    <% } %>
+
+
     <%- include("./partials/header.ejs") %>
+
+
     <main>
+        
         <div class="login">
-            <section class="formulario">
-            <h3 id="BIENVENIDO"> B I E N V E N I D O </h3>   
-            </section>
-            <form action="">
-                <label>Usuario:</label>
-                <input type="text" name="emailUsuario " required placeholder="Ingresa tu email">
+            <form action="/login" method="POST" enctype="multipart/form-data>
+                <h1 class="form-titulo">INICIO DE SESION</h1>
+                <h1 class="form-titulo">DELY-HOUSE</h1>
+                <div class="input">
+                <label for=""> Usuario:</label>
+                <input type="email" name="email " required placeholder="Ingresa tu email">
                 <label>Contraseña:</label>
                 <input type="password" name="passwordUsuario" required placeholder="Ingresa tu contraseña">
                 <button class="button" type="submit">Ingresar</button>

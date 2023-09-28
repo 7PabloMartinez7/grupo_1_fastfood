@@ -22,5 +22,13 @@
   "email": "pabletox@gmail.com",
   "contraseña": "$2a$10$51TygSS43KBh.qcBRnAjVOtA8N9WzLCdLPfHNJGrwVo3CYnup6Rbe",
   "avatar": "avatar-1695824748052.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Cristian",
+  "apellido": "Castro",
+  "email": "castrocristian303@gmail.com",
+  "contraseña": "$2a$10$8VYKXa.Mt/cfReRaOnAmTehyXf8wWHTMDPBsBZyMO6fxpt7hWhTA6",
+  "avatar": "default-image.png"
  }
 ]
