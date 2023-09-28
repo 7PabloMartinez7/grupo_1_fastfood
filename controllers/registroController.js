@@ -3,6 +3,7 @@ const fs=require("fs")
 const path = require ("path")
 const bcrypt = require ("bcryptjs")
 const users = path.join(__dirname,"../data/users.json")
+const { validationResult } = require("express-validator")
 const registroController = {
     registro: (req,res) => {
         res.render ("registro")
@@ -10,19 +11,31 @@ const registroController = {
     registroGuardado: (req, res) => {
         const data = req.body
         const usuario = JSON.parse(fs.readFileSync(users, "utf-8"))
-        const registroUsuario = {
-            id: usuario[usuario.length-1].id+1, 
-            nombre: data.nombre, 
-            apellido: data.apellido,
-            email: data.email,
-            contraseña: bcrypt.hashSync(data.contrasenia, 10),
-            avatar: req.file ? req.file.filename: "default-image.png"
+        //resultValidation es un objeto 
+        const resultValidation= validationResult(req)
+        //ingreso al objeto resultValidation y la propiedad errors y pregunto el largo si es mayor a 0
+        if(resultValidation.errors.length>0){
+            //   a la vista registro paso la variable error con los datos de resultValidation pero 
+           //   en forma de objeto literal por eso uso ".mapped()"
+            res.render("registro",{
+            errors: resultValidation.mapped(),
+            oldData: req.body
+            })
         }
-        usuario.push(registroUsuario)
-        fs.writeFileSync(users, JSON.stringify(usuario, null, " "))
-        res.redirect ("/login");
-        //res.send ("registro exitoso")
-        //redireccion a pagina login
+        else{
+            const registroUsuario = {
+                id: usuario[usuario.length-1].id+1, 
+                nombre: data.nombre, 
+                apellido: data.apellido,
+                email: data.email,
+                contraseña: bcrypt.hashSync(data.contrasenia, 10),
+                avatar: req.file ? req.file.filename: "default-image.png"
+            }
+            usuario.push(registroUsuario)
+            fs.writeFileSync(users, JSON.stringify(usuario, null, " "))
+            res.redirect ("/login");
+        } 
     }
+        
 }
 module.exports = registroController;

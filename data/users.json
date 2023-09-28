@@ -30,5 +30,13 @@
   "email": "castrocristian303@gmail.com",
   "contraseña": "$2a$10$8VYKXa.Mt/cfReRaOnAmTehyXf8wWHTMDPBsBZyMO6fxpt7hWhTA6",
   "avatar": "default-image.png"
+ },
+ {
+  "id": 5,
+  "nombre": "juan",
+  "apellido": "gomez",
+  "email": "juan9@gmail.com",
+  "contraseña": "$2a$10$zTkluJNXM7cGgSJpyRzi5eGLwTvMjqGkio2jgJcfPF2a6C4.9Ay0O",
+  "avatar": "avatar-1695886274717.jpg"
  }
 ]

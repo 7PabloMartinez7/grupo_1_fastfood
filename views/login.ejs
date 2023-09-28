@@ -2,25 +2,8 @@
 <html lang="en">
     <%- include("./partials/head.ejs") %>
 <body class="body-login">
-    
-    <% if (typeof errors != !undefined!) { %>
-        <p style="color:red"> ERROR</p>
-        <ul>
-            <% for (let i=0; i < errors.length; i++) { %>
-                <li>
-                    <%=<errors[i].msg%>
-                </li>
-            <% } %>
-
-        </ul>
-    <% } %>
-
-
     <%- include("./partials/header.ejs") %>
-
-
-    <main>
-        
+    <main>   
         <div class="login">
             <form action="/login" method="POST" enctype="multipart/form-data>
                 <h1 class="form-titulo">INICIO DE SESION</h1>

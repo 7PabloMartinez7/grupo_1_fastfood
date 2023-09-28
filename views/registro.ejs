@@ -9,31 +9,52 @@
           <h1 class="form-titulo">REGISTRATE A</h1>
           <h1 class="form-titulo">DELY-HOUSE</h1>
           <div class="input">
-          <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"
+            value="<%= locals.oldData ? oldData.nombre : null %>"
+            >
+            <% if (locals.errors && errors.nombre) { %>
+              <div class="errores"><%=errors.nombre.msg%></div>
+            <% } %>
           </div>  
           <div>
-          <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required> 
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido"
+            value="<%= locals.oldData ? oldData.apellido : null %>" 
+            >
+            <% if (locals.errors && errors.apellido) { %>
+              <div class="errores"><%=errors.apellido.msg%></div>
+            <% } %>
           </div>
           <div>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email"
+            value="<%= locals.oldData ? oldData.email : null %>" 
+            >
+            <% if (locals.errors && errors.email) { %>
+              <div class="errores"><%=errors.email.msg%></div>
+            <% } %>
           </div>
           <div>
             <label for="contrasenia">Contraseña</label>
-            <input type="password" id="contrasenia" name="contrasenia" required>
+            <input type="password" id="contrasenia" name="contrasenia">
+            <% if (locals.errors && errors.contrasenia) { %>
+              <div class="errores"><%=errors.contrasenia.msg%></div>
+            <% } %>
           </div>
           <div>
             <label for="avatar">Seleccionar una imagen para el perfil:</label>
             <input type="file" name="avatar">
+            <% if (locals.errors && errors.avatar) { %>
+              <div class="errores"><%=errors.avatar.msg%></div>
+            <% } %>
           </div>
           <div class="recuerdame">
             <input type="checkbox" name="recuerdame" id="Recuerdame">
             <label for="recuerdame">Recuerdame</label>
           </div>
           <div class="recuerdame">
-          <input type="submit" value="REGISTRARME">
+            <input type="submit" value="REGISTRARME">
           </div>
       </form>
     </div>

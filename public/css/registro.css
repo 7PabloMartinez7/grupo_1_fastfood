@@ -14,6 +14,10 @@
   align-items: center;
   min-height: 100vh;
 }
+.errores{
+  color: red;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .container {
   background-color: rgba(179, 144, 144, 0.911);
   padding: 20px;
