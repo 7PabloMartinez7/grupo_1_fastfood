@@ -38,5 +38,13 @@
   "email": "juan9@gmail.com",
   "contraseña": "$2a$10$zTkluJNXM7cGgSJpyRzi5eGLwTvMjqGkio2jgJcfPF2a6C4.9Ay0O",
   "avatar": "avatar-1695886274717.jpg"
+ },
+ {
+  "id": 6,
+  "nombre": "GONZALO RICARDO",
+  "apellido": "TARITOLAY",
+  "email": "gonzalotaritolay94@gmail.com",
+  "contraseña": "$2a$10$NntXvyPW8bREcN0A85Rhx.1EsQLgzlRlhrE6Oj7JULjUaQsOITi6O",
+  "avatar": "avatar-1695887947882.jpg"
  }
 ]
