@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 const multer = require ("multer");
 const path = require ("path");
-const { body }=require("express-validator")
 const registroController = require("../controllers/registroController.js");
+const { body }=require("express-validator")
 const validaciones = [
     body("nombre").notEmpty().withMessage("tienes que escribir un nombre"),
     body("apellido").notEmpty().withMessage("tienes que escribir un apellido"),

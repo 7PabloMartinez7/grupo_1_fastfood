@@ -3,6 +3,7 @@ const router= express.Router();
 const multer= require("multer")
 const path= require("path")
 const newProductController= require("../controllers/newProductController.js");
+const authMiddleware = require("../middlewares/global/authMiddleware.js")
 //configurando multer para leer archivos
 const storage = multer.diskStorage({
     //ubicacion del archivo
@@ -17,7 +18,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({storage: storage});
 //crear producto (nuevoproducto.ejs)
-router.get("/agregarProducto",newProductController.crear);
+router.get("/agregarProducto",authMiddleware,newProductController.crear);
 //guardar producto
 //dentro de upload.single("nombreDelInput")
 router.post("/agregarProducto",upload.single("ImagenProd"),newProductController.procesar);

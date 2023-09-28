@@ -33,18 +33,10 @@
  },
  {
   "id": 5,
-  "nombre": "juan",
-  "apellido": "gomez",
-  "email": "juan9@gmail.com",
-  "contraseña": "$2a$10$zTkluJNXM7cGgSJpyRzi5eGLwTvMjqGkio2jgJcfPF2a6C4.9Ay0O",
-  "avatar": "avatar-1695886274717.jpg"
- },
- {
-  "id": 6,
-  "nombre": "GONZALO RICARDO",
+  "nombre": "GONZALO",
   "apellido": "TARITOLAY",
   "email": "gonzalotaritolay94@gmail.com",
-  "contraseña": "$2a$10$NntXvyPW8bREcN0A85Rhx.1EsQLgzlRlhrE6Oj7JULjUaQsOITi6O",
-  "avatar": "avatar-1695887947882.jpg"
+  "contraseña": "$2a$10$MNxDo5BvkPum1nEToaX9d.9UKaGrKyA9AxizIzCNWMWehLNDTV1Ni",
+  "avatar": "avatar-1695925464176.jpg"
  }
 ]

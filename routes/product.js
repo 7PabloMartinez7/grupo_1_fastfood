@@ -3,6 +3,7 @@ const router = express.Router();
 const product = require("../controllers/productController.js");
 const multer = require("multer")
 const path = require("path")
+const authMiddleware = require("../middlewares/global/authMiddleware.js")
 //configurando multer
 const storage = multer.diskStorage({
     //ubicacion del archivo
@@ -19,7 +20,7 @@ const upload = multer({storage: storage});
 //pagina de todos los productos (product.ejs)
 router.get("/producto",product.product); 
 //producto particular (detalle.ejs)
-router.get("/producto/detalle/:id/",product.detalle); 
+router.get("/producto/detalle/:id/",authMiddleware,product.detalle); 
 //producto eliminado 
 router.delete("/producto/eliminado/:id/",product.eliminar);
 //editar producto y guardar producto editado,

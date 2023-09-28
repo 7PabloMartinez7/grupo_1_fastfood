@@ -5,6 +5,16 @@
     <%- include("./partials/header.ejs") %>
     <main>   
         <div class="login">
+            <% if (typeof errors != "undefined") { %>
+                <p class="errores">ERROR</p>
+                <ul>
+                    <% for( let i = 0; i < errors.length; i++) {%>
+                        <li>
+                            <%= errors[i].msg %>
+                        </li>
+                    <% } %>
+                </ul>
+            <% } %>
             <form action="/login" method="POST" enctype="multipart/form-data>
                 <h1 class="form-titulo">INICIO DE SESION</h1>
                 <h1 class="form-titulo">DELY-HOUSE</h1>

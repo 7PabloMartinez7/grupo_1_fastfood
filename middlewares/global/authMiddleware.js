@@ -3,7 +3,8 @@ function authtMiddleware(req, res, next) {
         next ();
 
     } else {
-        res.send("Esta pagina es solo para usuarios");
+        //res.send("Esta pagina es solo para usuarios");
+        res.render("login")
     }
 
 }
