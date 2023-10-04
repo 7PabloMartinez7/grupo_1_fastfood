@@ -56,10 +56,10 @@
   "image": "milanesa.png"
  },
  {
-  "id": 9,
-  "name": "EMPANADA",
-  "description": "De masa casera, de queso, pollo y carne",
-  "price": "2100",
-  "image": "product-1694008202617.png"
+  "id": "9",
+  "name": "EMPANADAs",
+  "description": "de carneE",
+  "price": "1800",
+  "image": "product-1696424046160.png"
  }
 ]
