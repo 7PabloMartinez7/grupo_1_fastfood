@@ -1,4 +1,4 @@
-module.exports = (secualize, dataTypes) => {
+module.exports = (sequelize, dataTypes) => {
     let alias = "Productos";
 
     let cols = {
@@ -18,7 +18,7 @@ module.exports = (secualize, dataTypes) => {
                 type: dataTypes.INTEGER
         },
         imagen:{
-                type: dataTypes //AVERIGUAR QUE DATATYPES ES!
+                type: dataTypes.STRING
         },
     }
 
@@ -28,6 +28,6 @@ module.exports = (secualize, dataTypes) => {
     }
 
 
-    const Productos = secualize.define(alias, columnas, config);
+    const Productos = sequelize.define(alias, cols, config);
     return Productos;
 }
