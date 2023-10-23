@@ -1,11 +1,20 @@
 const fs=require("fs")
 const path = require ("path")
 const productoJson = path.join(__dirname,"../data/products.json")
+const db = require("../database/models")
 const newProductController ={
     crear:(req,res)=>{
         res.render("nuevoproducto")
     },
     procesar:(req,res)=>{
+        db.Productos.create({
+            nombre:req.body.NombreProd,
+            descripcion:req.body.DescripcionProd,
+            precio:req.body.PrecioProd,
+            imagen:req.body.ImagenProd,
+        })
+        res.redirect("/")
+        /* 
         const data=req.body;
         const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
         const newProduct= {
@@ -20,6 +29,7 @@ const newProductController ={
         //escribir el archivo
         fs.writeFileSync(productoJson, JSON.stringify(product, null ," "))
         res.redirect("/")
+        */
     }
 }
 module.exports = newProductController;

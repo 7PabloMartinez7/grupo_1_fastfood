@@ -7,22 +7,22 @@
         <section >
             <article id="articuloDetalle">
                 <div id="caja1Detalle">
-                    <center><img id="imagenProductDetail" src="/images/<%= product.image %>" alt="imagen"></center>
-                    <h4><%=product.description%></h4>
+                    <!-- <center><img id="imagenProductDetail" src="/images/productos,imagenconejs" alt="imagen"></center>-->
+                    <h4><%=productos.descripcion%></h4>
                 </div>
                 <div id="caja2Detalle">
-                    <h3><%=product.name%></h3>
-                    <h4>$<%=product.price%></h4>
+                    <h3><%=productos.nombre%></h3>
+                    <h4>$<%=productos.precio%></h4>
                     <div id="botonesDetalle">
                         <form  action="">
                             <input id="comprarDetalle"type="submit" value="Comprar">
                         </form> 
                         <div id="botonesDetalle2">
-                            <form action="/producto/eliminado/<%=product.id%>?_method=DELETE" method="POST">
+                            <form action="/producto/eliminado/<%=productos.id%>?_method=DELETE" method="POST">
                                 <input id="eliminarDetalle" type="submit" value="Eliminar">
                             </form>
                             <form action="">
-                                <a id="editarDetalle" href="/producto/editar/<%=product.id%>">Editar</a>
+                                <a id="editarDetalle" href="/producto/editar/<%=productos.id%>">Editar</a>
                             </form>
                         </div>  
                     </div>       

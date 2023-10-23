@@ -4,20 +4,17 @@
 <body>
     <%- include("./partials/header.ejs") %>
     <main>
-        <% product.forEach(product => {
-            %>
+        <% for( let i = 0; i < productos.length; i++ ) { %>
             <section>
-                <a class="a" href="/producto/detalle/<%=product.id%>">
+                <a class="a" href="/producto/detalle/<%=productos[i].id%>">
                     <article id="articuloProduct">
-                        <h3><%=product.name%></h3>
-                        <h4><%=product.description%></h4>
-                        <h4>$<%=product.price%></h4>   
-                        <center><img id="imagenProduct" src="/images/<%= product.image %>" alt="imagen"></center>
+                        <h3><%=productos[i].nombre%></h3>
+                        <h4><%=productos[i].descripcion%></h4>
+                        <h4>$<%=productos[i].precio%></h4>   
                     </article>
-                </a>
+                </a>     
             </section>
-            <% 
-        }) %>
+        <% } %>
     </main>
     <%- include("./partials/footer.ejs") %>
 </body>

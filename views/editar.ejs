@@ -5,20 +5,20 @@
     <%- include("./partials/header.ejs") %>
     <main >
         <section id="mainNewProducto">
-            <h5 id="subtituloEditProduct">Estas editando: <i><%=product.name%></i></h5>
-            <form method="POST" action="/producto/editar/<%= product.id %>/?_method=PUT" id="formularioNewProd" enctype="multipart/form-data" > 
+            <h5 id="subtituloEditProduct">Estas editando: <i><%=productos.nombre%></i></h5>
+            <form method="POST" action="/producto/editar/<%= productos.id %>/?_method=PUT" id="formularioNewProd" enctype="multipart/form-data" > 
                 
                 <label for="NombreProd"></label>
-                <input type="text"  name="NombreProd" value="<%=product.name%>" id="NombreProd">
+                <input type="text"  name="NombreProd" value="<%=productos.nombre%>" id="NombreProd">
                 
                 <label for="DescripcionProd"></label>
-                <input type="text" name="DescripcionProd" value="<%=product.description%>" id="DescripcionProd">
+                <input type="text" name="DescripcionProd" value="<%=productos.descripcion%>" id="DescripcionProd">
                 
                 <label for="PrecioProd"></label>
-                <input type="text" name="PrecioProd" value="<%=product.price%>" placeholder="NO COLOCAR SIMBOLO PESOS" id="PrecioProd">
+                <input type="text" name="PrecioProd" value="<%=productos.precio%>" placeholder="NO COLOCAR SIMBOLO PESOS" id="PrecioProd">
                 
                 <label for="ImagenProd"></label>
-                <input type="file" name="ImagenProd"  id="ImagenProd" value="/images/<%= product.image %>">
+                <input type="file" name="ImagenProd"  id="ImagenProd" value="/images/<%= productos.imagen %>">
                 
                 <input type="submit" value="Guardar" id="EnviarProd">
                 <input type="reset" value="Cancelar" id="CancelarProd">
