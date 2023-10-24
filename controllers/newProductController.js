@@ -14,7 +14,12 @@ const newProductController ={
             imagen:req.body.ImagenProd,
         })
         res.redirect("/")
-        /* 
+        
+    }
+}
+module.exports = newProductController;
+//*******PROCESAR CON JSON*******
+/* 
         const data=req.body;
         const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
         const newProduct= {
@@ -30,6 +35,3 @@ const newProductController ={
         fs.writeFileSync(productoJson, JSON.stringify(product, null ," "))
         res.redirect("/")
         */
-    }
-}
-module.exports = newProductController;

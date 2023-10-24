@@ -15,13 +15,7 @@ const productController = {
         .then((productos) => {
             res.render ("detalle", {productos:productos})
         })
-        /*
-        const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
-        const productToSend=product.find(product=>{
-            return product.id==req.params.id
-        })
-        res.render ("detalle", {product:productToSend})
-        */
+        
     },
     eliminar: (req,res) =>{
         db.Productos.destroy({
@@ -31,28 +25,14 @@ const productController = {
         })
         
         res.redirect ("/producto")
-        /*
-            const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
-        //filtra en la variable productoFiltrado todos los archivos que NO tengan el id encontrado
-        const productoFiltrado=product.filter(product=>{
-            return product.id != req.params.id
-        })
-        fs.writeFileSync(productoJson, JSON.stringify(productoFiltrado, null ," "))
-        res.redirect ("/producto")
-        */ 
+        
     },
     editar: (req,res)=>{
         db.Productos.findByPk(req.params.id)
         .then((productos) => {
             res.render ("editar", {productos:productos})
         })
-        /* 
-            const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
-		    const productToEdit = product.find(product =>{
-			return product.id == req.params.id;	
-		});
-        res.render("editar",{product: productToEdit})
-        */
+        
     },
     editarGuardar: (req,res)=>{
         db.Productos.update({
@@ -66,26 +46,7 @@ const productController = {
             }
         })
         res.redirect("/")
-        /*
-            const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
-		const productToEdit = product.find(product =>{
-			return product.id == req.params.id;	
-		})
-        let productoEditado={
-            id: req.params.id,
-            name:req.body.NombreProd,
-            description: req.body.DescripcionProd,
-            price:req.body.PrecioProd,
-            image:req.file ? req.file.filename : productToEdit.image,
-        }
-        //busca la posicion en el array del producto que estamos editando
-        let productEncontrado = product.findIndex(product =>{
-            return product.id == req.params.id;
-        } )
-        product[productEncontrado]=productoEditado;
-        fs.writeFileSync(productoJson, JSON.stringify(product, null ," "))
-        res.redirect ("/producto")
-        */
+       
         
     }
 }
@@ -106,4 +67,48 @@ module.exports = productController;
             </section>
             <% 
         }) %>
+
+//***************ELIMINAR*****************
+        const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
+        //filtra en la variable productoFiltrado todos los archivos que NO tengan el id encontrado
+        const productoFiltrado=product.filter(product=>{
+            return product.id != req.params.id
+        })
+        fs.writeFileSync(productoJson, JSON.stringify(productoFiltrado, null ," "))
+        res.redirect ("/producto")
+//********EDITAR ********************
+
+        
+            const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
+		    const productToEdit = product.find(product =>{
+			return product.id == req.params.id;	
+		});
+        res.render("editar",{product: productToEdit})
+//***********EDITAR GUARDAAR*************   
+            const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
+		const productToEdit = product.find(product =>{
+			return product.id == req.params.id;	
+		})
+        let productoEditado={
+            id: req.params.id,
+            name:req.body.NombreProd,
+            description: req.body.DescripcionProd,
+            price:req.body.PrecioProd,
+            image:req.file ? req.file.filename : productToEdit.image,
+        }
+        //busca la posicion en el array del producto que estamos editando
+        let productEncontrado = product.findIndex(product =>{
+            return product.id == req.params.id;
+        } )
+        product[productEncontrado]=productoEditado;
+        fs.writeFileSync(productoJson, JSON.stringify(product, null ," "))
+        res.redirect ("/producto")
+//***********DETALLE***************** 
+
+        const product= JSON.parse(fs.readFileSync(productoJson, "utf-8"))
+        const productToSend=product.find(product=>{
+            return product.id==req.params.id
+        })
+        res.render ("detalle", {product:productToSend})
+        
 */
