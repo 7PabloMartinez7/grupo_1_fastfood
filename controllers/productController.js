@@ -39,7 +39,7 @@ const productController = {
             nombre:req.body.NombreProd,
             descripcion:req.body.DescripcionProd,
             precio:req.body.PrecioProd,
-            imagen:req.file ? req.file.filename : productToEdit.image,
+            imagen:req.file ? req.file.filename : req.body.ImagenProd,
         },{
             where:{
                 id:req.params.id

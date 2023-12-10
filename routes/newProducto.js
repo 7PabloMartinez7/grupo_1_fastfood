@@ -8,7 +8,7 @@ const authMiddleware = require("../middlewares/global/authMiddleware.js")
 const storage = multer.diskStorage({
     //ubicacion del archivo
     destination: function (req, file, cb) {
-        cb(null, path.join(__dirname,"../public/images"))
+        cb(null, path.join(__dirname,"../public/images/productos"))
     },
     //para que no se repita el nombre del archivo
     filename: function (req, file, cb) {

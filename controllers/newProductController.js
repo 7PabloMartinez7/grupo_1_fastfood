@@ -11,7 +11,7 @@ const newProductController ={
             nombre:req.body.NombreProd,
             descripcion:req.body.DescripcionProd,
             precio:req.body.PrecioProd,
-            imagen:req.body.ImagenProd,
+            imagen:req.file ? req.file.filename : req.body.ImagenProd
         })
         res.redirect("/")
         
