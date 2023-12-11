@@ -47,7 +47,7 @@
           </div>
           <div>
             <label for="avatar">Seleccionar una imagen para el perfil:</label>
-            <input type="file" name="avatar">
+            <input type="file" name="avatar" id="avatar">
             <% if (locals.errors && errors.avatar) { %>
               <div class="errores"><%=errors.avatar.msg%></div>
             <% } %>

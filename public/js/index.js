@@ -1,30 +1,23 @@
-window.addEventListener("load", () =>{
-
+window.addEventListener("load", () => {
     let form = document.querySelector(".form");
-    form.name.focus();
+    let name = document.querySelector("#nombre");
+    let email = document.querySelector("#email");
+    let password = document.querySelector("#contrasenia"); 
+    let avatar = document.querySelector("#avatar");
 
-    form.addEventListener("submit",(submitEvent)=> {
-
-        /*creacion de array de erroes vacio.
-        si se detectan errores se iran agregando aqui*/
+    form.addEventListener("submit", (submitEvent) => {
         let errors = [];
 
-        let name = document.querySelector("#nombre");
-        let email = document.querySelector("#email");
-        let password = document.querySelector("contrasenia");
-        let country = document.querySelector("#country");
-        let avatar = document.querySelector("input[name='avatar']");
-
         //---NAME---
-        if (name.value == "") {
+        if (name.value.length < 2) {
             errors.push("El campo debe tener al menos 2 caracteres");
             name.classList.remove("is-valid");
             name.classList.add("is-invalid");
         } else {
             name.classList.add("is-valid");
             name.classList.remove("is-invalid");
-            form.email.focus();
-        };
+            email.focus(); 
+        }
 
         //---EMAIL (regex)---
         let regEmail = /\S+@\S+\.\S+/;
@@ -35,7 +28,7 @@ window.addEventListener("load", () =>{
         } else {
             email.classList.add("is-valid");
             email.classList.remove("is-invalid");
-            form.contrasenia.focus();
+            password.focus(); 
         }
 
         //---PASSWORD---
@@ -74,4 +67,4 @@ window.addEventListener("load", () =>{
             form.submit();
         }
     });
-})
+});
