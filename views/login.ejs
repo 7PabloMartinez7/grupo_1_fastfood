@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include("./partials/head.ejs") %>
+    <script src="../public/js/login.js"></script>
 <body class="body-login">
     <%- include("./partials/header.ejs") %>
     <main>   
@@ -20,9 +21,9 @@
                 <h1 class="form-titulo">DELY-HOUSE</h1>
                 <div class="input">
                 <label for="email"> Usuario:</label>
-                <input type="email" name="email"  placeholder="Ingresa tu email">
+                <input type="email" name="email" id="email" placeholder="Ingresa tu email">
                 <label for="passwordUsuario">Contraseña:</label>
-                <input type="password" name="passwordUsuario"  placeholder="Ingresa tu contraseña">
+                <input type="password" name="passwordUsuario" id="passwordUsuario" placeholder="Ingresa tu contraseña">
                 <button class="button" type="submit">Ingresar</button>
                 <button class="button" type="submit" id="forgot-password-btn">Olvide mi contraseña</button>
                 <button class="button" type="submit">Registrarse</button>

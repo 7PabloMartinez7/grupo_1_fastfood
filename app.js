@@ -36,6 +36,9 @@ app.listen(5000,() => {
     console.log ("Servidor corriendo en el puerto 5000");
  } );
 
+ app.use('/public/js/index.js', express.static(__dirname + '/public/js/index.js'));
+ app.use('/public/js/newProducto.js', express.static(__dirname + '/public/js/newProducto.js'));
+ app.use('/public/js/login.js', express.static(__dirname + '/public/js/login.js'));
 
 
 

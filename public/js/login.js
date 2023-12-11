@@ -6,8 +6,8 @@ window.addEventListener("load", () => {
 
         let errors = [];
 
-        let email = document.querySelector("input[name='email']");
-        let password = document.querySelector("input[name='passwordUsuario']");
+        let email = document.querySelector("#email");
+        let password = document.querySelector("#passwordUsuario");
 
         // --- EMAIL ---
         let regEmail = /\S+@\S+\.\S+/;
