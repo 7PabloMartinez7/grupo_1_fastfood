@@ -1,0 +1,41 @@
+.CajaPadre{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 40vh;
+    margin: 50px auto 150px auto;
+    background-color: #c71755c9;
+    box-shadow:inset -5px -5px 20px 0 rgb(102, 99, 99);
+    border-radius: 15px;
+}
+.cajaHijo{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+    font-size: 25px;
+}
+.cajaHijo2{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.caja1User{
+
+}
+.caja2User{
+    padding: 30px;
+}
+.caja2User h3{
+    text-align: left;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: antiquewhite;
+}
+.imgUser{
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+}

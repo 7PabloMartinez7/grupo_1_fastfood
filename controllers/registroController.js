@@ -22,7 +22,7 @@ const registroController = {
                 apellido:req.body.apellido,
                 email:req.body.email,
                 contrasenia:bcrypt.hashSync(req.body.contrasenia, 10),
-                avatar:req.body.avatar
+                avatar:req.file ? req.file.filename : req.body.avatar
             })
             res.redirect("/login")
         }

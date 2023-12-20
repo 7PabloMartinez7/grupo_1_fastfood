@@ -25,8 +25,8 @@ const loginController = {
                {msg: "Credenciales Invalidas"}
              ]})
            }
-            req.session.usuarioLogueado= usuarioALoguearse
-            res.render("index") 
+            req.session.usuarioLogueado= usuarioALoguearse  
+            res.render("indexUser") 
           }
           else{
             res.render("login",{errors: errors.errors})

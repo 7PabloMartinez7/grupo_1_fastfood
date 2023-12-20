@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include("./partials/head.ejs") %>
+    
 <body>
-    <%- include("./partials/headerUser.ejs") %>
-    <main>
+    <header >
+        <section class="volverInicio">
+            <a href="/"><h1>D e l y - H o u s e</h1></a>
+            <a href="/"> <h3>----F a s t   F o o t----</h3></a>
+        </section>
+        <nav id="contenedor" >
+            <ul id="barra">
+                <li><a href="/producto">PRODUCTOS</a></li>
+                <li><a href="/novedades">NOVEDADES</a></li>
+                <li><a href="/agregarProducto">CREAR PRODUCTO</a></li>
+               
+            </ul>
+            <ul id="login">
+                <li><a href="/usuario">Mi Perfil</a></li>
+                <li><a href="/" class="cerrarSesion">Cerrar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <% for( let i = 0; i < usuarios.length; i++ ) { %>
+                <% if (usuarios[i].email==userlog.email) { %>
+                    <section class="CajaPadre">
 
-    </main>
+                        <div class="cajaHijo">
+                            <h5 >BIENVENIDO: <i><%=usuarios[i].nombre%></i></h5>
+                        </div>
+                        <div class="cajaHijo2">
+                            <div class="caja1User">
+                                <center><img class="imgUser "src="/images/avatars/<%=usuarios[i].avatar%>" alt="imagenUser"></center>
+                            </div>
+    
+                            <div class="caja2User">
+                                <h3>Nombre:  <%=usuarios[i].nombre%></h3>
+                                <h3>Apellido:  <%=usuarios[i].apellido%></h3>
+                                <h3>Correo:  <%=usuarios[i].email%></h3>
+                            </div>
+                        </div>
+
+                    </section>
+                <% } %>
+            <% } %>
+        </main>
     <%- include("./partials/footer.ejs") %>
+    
 </body>
 </html>
+

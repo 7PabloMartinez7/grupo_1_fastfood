@@ -5,17 +5,24 @@ const productoJson = path.join(__dirname,"../data/products.json")
 const productController = {
     product: (req,res) => {
         //codigo para que lea el modelo Producto.js
-        db.Productos.findAll()
-        .then((productos) => {
-            res.render("product",{productos:productos})
-        })
+        if (req.session.usuarioLogueado != undefined){
+            db.Productos.findAll()
+            .then((productos) => {
+                res.render("productUser",{productos:productos})
+            })   
+        }
+        else{
+            db.Productos.findAll()
+            .then((productos) => {
+                res.render("product",{productos:productos})
+            }) 
+        }
     },
     detalle: (req,res) => {
-        db.Productos.findByPk(req.params.id)
-        .then((productos) => {
+            db.Productos.findByPk(req.params.id)
+            .then((productos) => {
             res.render ("detalle", {productos:productos})
-        })
-        
+        }) 
     },
     eliminar: (req,res) =>{
         db.Productos.destroy({

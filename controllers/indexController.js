@@ -1,6 +1,11 @@
+db = require ("../database/models")
 const indexController ={
     index:(req,res)=>{
-        res.render("index")
+        if (req.session.usuarioLogueado != undefined){
+            res.render ("indexUser")
+        }else{
+            res.render("index")
+        }
     }
 }
 module.exports = indexController;

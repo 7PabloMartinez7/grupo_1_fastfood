@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/headerUser.ejs") %>
+    <main>
+        <% for( let i = 0; i < productos.length; i++ ) { %>
+            <section>
+                <a class="a" href="/producto/detalle/<%=productos[i].id%>">
+                    <article id="articuloProduct">
+                        <h3><%=productos[i].nombre%></h3>
+                        <h4><%=productos[i].descripcion%></h4>
+                        <h4>$<%=productos[i].precio%></h4>
+                        <center><img src="/images/productos/<%=productos[i].imagen%>" alt="imagen" ></center>   
+                    </article>
+                </a>     
+            </section>
+        <% } %>
+    </main>
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>
